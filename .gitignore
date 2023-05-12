@@ -2,6 +2,8 @@ glad
 glfw-3.3.8
 glad.zip
 glfw-3.3.8.zip
+**/*.vcxproj
+**/*.vcxproj.filters
 
 # User-specific files
 *.suo
