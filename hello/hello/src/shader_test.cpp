@@ -167,7 +167,12 @@ int main()
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         //glUseProgram(shaderProgram);
+        // 获取时间
+        float timeValue = glfwGetTime();
+        // 获得变量值
+        float value = (sin(timeValue) / 2.0f) + 0.5f;
         ourShader.use();
+        ourShader.setFloat("color", value);
         // draw our first triangle
 
         /*float timeValue = glfwGetTime();
